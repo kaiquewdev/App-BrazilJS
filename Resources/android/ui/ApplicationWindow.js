@@ -2,11 +2,13 @@
   var Window;
 
   Window = function() {
-    var ActionBarView, actionBar, self;
+    var ActionBarView, TabStripView, actionBar, self, tabStripView;
     ActionBarView = require("/ui/ActionBarView");
+    TabStripView = require("/ui/TabStripView");
     self = Ti.UI.createWindow({
       backgroundColor: "#FFF",
-      title: "Home"
+      title: "Home",
+      navBarHidden: true
     });
     actionBar = new ActionBarView({
       title: "BrazilJS",
@@ -19,6 +21,27 @@
       ]
     });
     self.add(actionBar);
+    tabStripView = new TabStripView({
+      tabs: {
+        stream: {
+          title: L("talks"),
+          icon: ''
+        },
+        groups: {
+          title: L("talkers"),
+          icon: ''
+        },
+        events: {
+          title: L("localization"),
+          icon: ''
+        },
+        leaders: {
+          title: L("about"),
+          icon: ''
+        }
+      }
+    });
+    self.add(tabStripView);
     return self;
   };
 
