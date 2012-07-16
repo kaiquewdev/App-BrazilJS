@@ -36,7 +36,16 @@
             <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
         </orientations>
     </iphone>
-    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest android:versionCode="1" android:versionName="1.0">
+            <application>
+                <activity android:name="net.nyvra.braziljs" android:screenOrientation="portrait"
+                    android:configChanges="keyboardHidden|orientation"
+                    >
+                </activity>
+            </application>
+        </manifest>
+    </android>
     <mobileweb>
         <precache/>
         <splash>

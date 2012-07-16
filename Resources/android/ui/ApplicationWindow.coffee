@@ -7,6 +7,7 @@ Window = ->
 		backgroundColor: "#FFF"
 		title: "Home"
 		navBarHidden: true
+		orientationModes: [Titanium.UI.PORTRAIT]
 
 	# Create ActionBar
 	actionBar = new ActionBarView

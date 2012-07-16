@@ -8,7 +8,8 @@
     self = Ti.UI.createWindow({
       backgroundColor: "#FFF",
       title: "Home",
-      navBarHidden: true
+      navBarHidden: true,
+      orientationModes: [Titanium.UI.PORTRAIT]
     });
     actionBar = new ActionBarView({
       title: "BrazilJS",
