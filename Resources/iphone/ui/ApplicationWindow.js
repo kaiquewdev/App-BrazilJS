@@ -2,16 +2,16 @@
   var TabGroup;
 
   TabGroup = function() {
-    var self, tabAbout, tabHours, tabLocalization, tabTalkers;
+    var self, tabAbout, tabLocalization, tabTalkers, tabTalks;
     self = Ti.UI.createTabGroup();
+    tabTalks = Ti.UI.createTab({
+      title: L("talks")
+    });
+    self.addTab(tabTalks);
     tabTalkers = Ti.UI.createTab({
       title: L("talkers")
     });
     self.addTab(tabTalkers);
-    tabHours = Ti.UI.createTab({
-      title: L("hours")
-    });
-    self.addTab(tabHours);
     tabLocalization = Ti.UI.createTab({
       title: L("localization")
     });

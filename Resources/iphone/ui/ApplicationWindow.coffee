@@ -5,15 +5,15 @@ TabGroup = ->
 
 	# Create Tabs and add to TabGroup
 
+	# Talks
+	tabTalks = Ti.UI.createTab
+		title: L("talks")
+	self.addTab(tabTalks)
+
 	# Talkers
 	tabTalkers = Ti.UI.createTab
 		title: L("talkers")
 	self.addTab(tabTalkers)
-
-	# Talks (hours)
-	tabHours = Ti.UI.createTab
-		title: L("hours")
-	self.addTab(tabHours)
 
 	# Localization
 	tabLocalization = Ti.UI.createTab
