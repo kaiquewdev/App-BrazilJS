@@ -14,7 +14,7 @@
       title: "BrazilJS",
       buttons: [
         {
-          title: "Share",
+          icon: "/images/icons/Closed-Mail.png",
           id: "share",
           width: 60
         }
@@ -23,21 +23,21 @@
     self.add(actionBar);
     tabStripView = new TabStripView({
       tabs: {
-        stream: {
+        talks: {
           title: L("talks"),
-          icon: ''
+          icon: "/images/icons/Allotted-Time.png"
         },
-        groups: {
+        talkers: {
           title: L("talkers"),
-          icon: ''
+          icon: "/images/icons/Users.png"
         },
-        events: {
+        localization: {
           title: L("localization"),
-          icon: ''
+          icon: "/images/icons/Navigation-Map.png"
         },
-        leaders: {
-          title: L("about"),
-          icon: ''
+        twitter: {
+          title: L("twitter"),
+          icon: "/images/icons/Twitter-New.png"
         }
       }
     });

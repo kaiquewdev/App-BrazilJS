@@ -12,7 +12,7 @@ Window = ->
 	actionBar = new ActionBarView
 		title: "BrazilJS"
 		buttons:[{
-			title: "Share"
+			icon: "/images/icons/Closed-Mail.png"
 			id: "share"
 			width: 60
 		}]
@@ -22,18 +22,21 @@ Window = ->
 	# Create TabStripView
 	tabStripView = new TabStripView
 		tabs:
-			stream:
+			talks:
 				title: L("talks")
-				icon: ''
-			groups:
+				icon: "/images/icons/Allotted-Time.png"
+
+			talkers:
 				title: L("talkers")
-				icon: ''
-			events:
+				icon: "/images/icons/Users.png"
+
+			localization:
 				title: L("localization")
-				icon: ''
-			leaders:
-				title: L("about")
-				icon: ''
+				icon: "/images/icons/Navigation-Map.png"
+
+			twitter:
+				title: L("twitter")
+				icon: "/images/icons/Twitter-New.png"
 
 	self.add tabStripView
 

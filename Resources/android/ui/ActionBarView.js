@@ -47,8 +47,8 @@
       } else if (b.icon) {
         buttonIcon = Ti.UI.createImageView({
           image: b.icon,
-          height: 20,
-          width: 20
+          height: "30dp",
+          width: "30dp"
         });
         button.add(buttonIcon);
       }
