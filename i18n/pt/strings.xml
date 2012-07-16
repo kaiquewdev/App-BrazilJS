@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="talks">Palestras</string>
+	<string name="talkers">Palestrantes</string>
+	<string name="localization">Localização</string>
+	<string name="about">Sobre</string>
+</resources>

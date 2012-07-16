@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="talks">Talks</string>
+	<string name="talkers">Talkers</string>
+	<string name="localization">Localization</string>
+	<string name="about">About</string>
+</resources>
